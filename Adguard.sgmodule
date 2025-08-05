@@ -7,7 +7,7 @@ dns-server = system
 ipv6 = false
 
 [Script]
-Adguard = type=http-response, pattern=^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?), enable=true, script-path=adguard_dns_script/Adguard.js, requires-body=true, max-size=131072, timeout=10
+Adguard = type=http-response, pattern=^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?), enable=true, script-path=https://raw.githubusercontent.com/km1410/adguard_dns_script/refs/heads/main/Adguard.js?token=GHSAT0AAAAAADIVPGICNDJPTZEY5GMGMJX22ESFJDQ, requires-body=true, max-size=131072, timeout=10
 
 [MITM]
 hostname = mobile-api.adguard.org
